@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "snowy=false,type=bottom": {
+      "model": "betterpaths:block/podzol_slab"
+    },
+    "snowy=false,type=top": {
+      "model": "betterpaths:block/podzol_slab_top"
+    },
+    "snowy=false,type=double": {
+      "model": "minecraft:block/podzol"
+    }
+  }
+}
