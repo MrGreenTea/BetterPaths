@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "betterpaths",
+	"version": "0.1-1.20.1",
+	"name": "Better Paths",
+	"description": "Adds Variants to Grass, Dirt, GrassPaths and improves Paths",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/betterpaths/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"PreLaunch": ["stephen.betterpaths.BetterPathsPreLaunch"],
+		"main": [
+			"stephen.betterpaths.BetterPaths"
+		],
+		"client": [
+			"stephen.betterpaths.BetterPathsClient"
+		],
+		"fabric-datagen": [
+			"stephen.betterpaths.BetterPaths"
+		]
+	},
+	"accessWidener" : "betterpaths.accesswidener",
+	"mixins": [
+		"betterpaths.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

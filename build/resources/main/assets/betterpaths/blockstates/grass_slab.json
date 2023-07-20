@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "snowy=false,type=bottom": {
+      "model": "betterpaths:block/grass_slab"
+    },
+    "snowy=false,type=top": {
+      "model": "betterpaths:block/grass_slab_top"
+    },
+    "snowy=false,type=double": {
+      "model": "minecraft:block/grass_block"
+    },
+    "snowy=true,type=bottom": {
+      "model": "betterpaths:block/grass_slab_snow"
+    },
+    "snowy=true,type=top": {
+      "model": "betterpaths:block/grass_slab_top_snow"
+    },
+    "snowy=true,type=double": {
+      "model": "minecraft:block/grass_block_snow"
+    }
+  }
+}

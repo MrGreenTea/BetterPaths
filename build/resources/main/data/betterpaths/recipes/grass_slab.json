@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "BetterPaths",
+  "key": {
+    "#": {
+      "item": "minecraft:grass_block"
+    }
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "item": "betterpaths:grass_slab"
+  },
+  "show_notification": false
+}

@@ -1,0 +1,14 @@
+{
+  "values": [
+    "betterpaths:grass_slab",
+    "betterpaths:dirt_slab",
+    "betterpaths:podzol_slab",
+    "betterpaths:coarse_dirt_slab",
+    "betterpaths:rooted_dirt_slab",
+    "betterpaths:dirt_path_slab",
+    "betterpaths:farmland_slab",
+    "betterpaths:gravel_slab",
+    "betterpaths:sand_slab"
+
+  ]
+}

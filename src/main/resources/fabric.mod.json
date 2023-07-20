@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "betterpaths",
+	"version": "${version}",
+	"name": "Better Paths",
+	"description": "- Dirt Path Slab\n- Farmland Slab\n- Grass Slab\n- Gravel Slab\n- Podzol Slab\n- Sand Slab",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "GNU Lesser General Public License v3.0",
+	"icon": "assets/betterpaths/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"PreLaunch": ["stephen.betterpaths.BetterPathsPreLaunch"],
+		"main": [
+			"stephen.betterpaths.BetterPaths"
+		],
+		"client": [
+			"stephen.betterpaths.BetterPathsClient"
+		],
+		"fabric-datagen": [
+			"stephen.betterpaths.BetterPaths"
+		]
+	},
+	"accessWidener" : "betterpaths.accesswidener",
+	"mixins": [
+		"betterpaths.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

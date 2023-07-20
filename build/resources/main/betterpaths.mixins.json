@@ -1,0 +1,21 @@
+{
+	"required": true,
+	"package": "stephen.betterpaths.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"AttachedStemBlockMixin",
+
+		"CropBlockMixin",
+		"CropBlockStateMixin",
+		"DirtPathMixin",
+		"HoeItemMixin",
+		"EatCarrotCropGoalMixin",
+		"PlantBlockMixin",
+		"SecondaryPointsOfInterestSensorMixin",
+		"ShovelItemMixin",
+		"StemBlockMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "betterpaths:block/template_farmland_slab_top",
+  "textures": {
+    "dirt": "minecraft:block/dirt",
+    "top": "minecraft:block/farmland",
+    "side": "betterpaths:block/short_dirt_side"
+  }
+}

@@ -1,0 +1,3 @@
+v1	named	intermediary
+METHOD	stephen/betterpaths/mixin/CropBlockMixin	(Lnet/minecraft/block/BlockState;)I	getAge	method_9829
+METHOD	stephen/betterpaths/mixin/CropBlockStateMixin	()Lnet/minecraft/block/Block;	getBlock	method_26204
