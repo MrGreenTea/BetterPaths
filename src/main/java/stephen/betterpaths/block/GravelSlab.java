@@ -10,8 +10,4 @@ public class GravelSlab extends FallingSlab{
     public GravelSlab() {
         super(FabricBlockSettings.copy(Blocks.GRAVEL));
     }
-    @Override
-    public int getColor(BlockState state, BlockView world, BlockPos pos) {
-        return -8356741;
-    }
 }

@@ -63,28 +63,15 @@ public class DirtPathSlab extends SlabBlock {
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         SlabType slabType = state.get(TYPE);
-        switch (slabType) {
-            case DOUBLE: {
-                return DOUBLE_SHAPE;
-            }
-            case TOP: {
-                return TOP_SHAPE;
-            }
-        }
-        return BOTTOM_SHAPE;
+        return switch (slabType) {
+            case DOUBLE -> DOUBLE_SHAPE;
+            case TOP -> TOP_SHAPE;
+            default -> BOTTOM_SHAPE;
+        };
     }
 
     @Override
     public boolean canPathfindThrough(BlockState state, BlockView world, BlockPos pos, NavigationType type) {
         return false;
-    }
-    @Override
-    public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity){
-        if (!world.isClient()){
-            if (entity instanceof LivingEntity livingEntity){
-                livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 20));
-            }
-        }
-        super.onSteppedOn(world, pos, state, entity);
     }
 }

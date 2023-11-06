@@ -61,20 +61,10 @@ public class BetterPaths implements ModInitializer {
     public static Map<BlockState, BlockState> PATH_STATES = new HashMap<>();
     @Override
     public void onInitialize() {
-        FarmlandTag.init();
         ModItemGroups.registerItemGroups();
         //ModItems.registerModItems();
         ModBlocks.registerModBlocks();
 
-        TILLING_ACTIONS.put(ModBlocks.GRASS_SLAB.getDefaultState(), Pair.of(HoeItem::canTillFarmland, HoeItem.createTillAction(ModBlocks.FARMLAND_SLAB.getDefaultState())));
-        TILLING_ACTIONS.put(ModBlocks.GRASS_SLAB.getDefaultState().with(TYPE, SlabType.TOP), Pair.of(HoeItem::canTillFarmland, HoeItem.createTillAction(ModBlocks.FARMLAND_SLAB.getDefaultState().with(TYPE, SlabType.TOP))));
-        TILLING_ACTIONS.put(ModBlocks.GRASS_SLAB.getDefaultState().with(TYPE, SlabType.DOUBLE), Pair.of(HoeItem::canTillFarmland, HoeItem.createTillAction(ModBlocks.FARMLAND_SLAB.getDefaultState().with(TYPE, SlabType.DOUBLE))));
-        TILLING_ACTIONS.put(ModBlocks.DIRT_SLAB.getDefaultState(), Pair.of(HoeItem::canTillFarmland, HoeItem.createTillAction(ModBlocks.FARMLAND_SLAB.getDefaultState())));
-        TILLING_ACTIONS.put(ModBlocks.DIRT_SLAB.getDefaultState().with(TYPE, SlabType.TOP), Pair.of(HoeItem::canTillFarmland, HoeItem.createTillAction(ModBlocks.FARMLAND_SLAB.getDefaultState().with(TYPE, SlabType.TOP))));
-        TILLING_ACTIONS.put(ModBlocks.DIRT_SLAB.getDefaultState().with(TYPE, SlabType.DOUBLE), Pair.of(HoeItem::canTillFarmland, HoeItem.createTillAction(ModBlocks.FARMLAND_SLAB.getDefaultState().with(TYPE, SlabType.DOUBLE))));
-        TILLING_ACTIONS.put(ModBlocks.DIRT_PATH_SLAB.getDefaultState(), Pair.of(HoeItem::canTillFarmland, HoeItem.createTillAction(ModBlocks.FARMLAND_SLAB.getDefaultState())));
-        TILLING_ACTIONS.put(ModBlocks.DIRT_PATH_SLAB.getDefaultState().with(TYPE, SlabType.TOP), Pair.of(HoeItem::canTillFarmland, HoeItem.createTillAction(ModBlocks.FARMLAND_SLAB.getDefaultState().with(TYPE, SlabType.TOP))));
-        TILLING_ACTIONS.put(ModBlocks.DIRT_PATH_SLAB.getDefaultState().with(TYPE, SlabType.DOUBLE), Pair.of(HoeItem::canTillFarmland, HoeItem.createTillAction(ModBlocks.FARMLAND_SLAB.getDefaultState().with(TYPE, SlabType.DOUBLE))));
         TILLING_ACTIONS.put(ModBlocks.COARSE_DIRT_SLAB.getDefaultState(), Pair.of(HoeItem::canTillFarmland, HoeItem.createTillAction(ModBlocks.DIRT_SLAB.getDefaultState())));
         TILLING_ACTIONS.put(ModBlocks.COARSE_DIRT_SLAB.getDefaultState().with(TYPE, SlabType.TOP), Pair.of(HoeItem::canTillFarmland, HoeItem.createTillAction(ModBlocks.DIRT_SLAB.getDefaultState().with(TYPE, SlabType.TOP))));
         TILLING_ACTIONS.put(ModBlocks.COARSE_DIRT_SLAB.getDefaultState().with(TYPE, SlabType.DOUBLE), Pair.of(HoeItem::canTillFarmland, HoeItem.createTillAction(ModBlocks.DIRT_SLAB.getDefaultState().with(TYPE, SlabType.DOUBLE))));

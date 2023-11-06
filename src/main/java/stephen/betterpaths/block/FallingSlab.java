@@ -36,8 +36,7 @@ public class FallingSlab extends SlabBlock implements LandingBlock {
         }
 
         FluidState fluidState = ctx.getWorld().getFluidState(blockPos);
-        BlockState blockState2 = this.getDefaultState().with(TYPE, SlabType.BOTTOM).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
-        return blockState2;
+        return this.getDefaultState().with(TYPE, SlabType.BOTTOM).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
     }
 
     public void onLanding(World world, BlockPos pos, BlockState fallingBlockState, BlockState currentStateInPos, FallingBlockEntity fallingBlockEntity) {
@@ -48,7 +47,6 @@ public class FallingSlab extends SlabBlock implements LandingBlock {
     }
     @Override
     public void onBlockAdded(BlockState state, World world, BlockPos pos, BlockState oldState, boolean notify) {
-
         if (world.getBlockState(pos.down()).getBlock() instanceof FallingSlab && world.getBlockState(pos.down()).get(TYPE) == SlabType.BOTTOM){
             FallingSlabEntity fallingSlabEntity = FallingSlabEntity.spawnFromBlock(world, pos, state);
             this.configureFallingSlabEntity(fallingSlabEntity);

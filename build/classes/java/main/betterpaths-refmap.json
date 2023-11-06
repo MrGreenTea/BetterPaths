@@ -1,101 +1,23 @@
 {
   "mappings": {
-    "stephen/betterpaths/mixin/AttachedStemBlockMixin": {
-      "Lnet/minecraft/block/BlockState;isOf(Lnet/minecraft/block/Block;)Z": "Lnet/minecraft/class_2680;method_27852(Lnet/minecraft/class_2248;)Z",
-      "canPlantOnTop": "Lnet/minecraft/class_2195;method_9695(Lnet/minecraft/class_2680;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)Z"
-    },
-    "stephen/betterpaths/mixin/CropBlockMixin": {
-      "Lnet/minecraft/block/BlockState;isOf(Lnet/minecraft/block/Block;)Z": "Lnet/minecraft/class_2680;method_27852(Lnet/minecraft/class_2248;)Z",
-      "canPlantOnTop": "Lnet/minecraft/class_2302;method_9695(Lnet/minecraft/class_2680;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)Z",
-      "getAvailableMoisture": "Lnet/minecraft/class_2302;method_9830(Lnet/minecraft/class_2248;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)F"
-    },
-    "stephen/betterpaths/mixin/CropBlockStateMixin": {
-      "Lnet/minecraft/block/AbstractBlock$AbstractBlockState;getModelOffset(Lnet/minecraft/world/BlockView;Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/util/math/Vec3d;": "Lnet/minecraft/class_4970$class_4971;method_26226(Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)Lnet/minecraft/class_243;",
-      "Lnet/minecraft/block/AbstractBlock$AbstractBlockState;hasModelOffset()Z": "Lnet/minecraft/class_4970$class_4971;method_49228()Z",
-      "getModelOffset": "Lnet/minecraft/class_4970$class_4971;method_26226(Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)Lnet/minecraft/class_243;",
-      "hasModelOffset": "Lnet/minecraft/class_4970$class_4971;method_49228()Z"
-    },
-    "stephen/betterpaths/mixin/DirtPathMixin": {
-      "Lnet/minecraft/block/Block;onSteppedOn(Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/BlockState;Lnet/minecraft/entity/Entity;)V": "Lnet/minecraft/class_2248;method_9591(Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_1297;)V",
-      "onSteppedOn": "Lnet/minecraft/class_2248;method_9591(Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_1297;)V"
-    },
-    "stephen/betterpaths/mixin/EatCarrotCropGoalMixin": {
-      "Lnet/minecraft/block/BlockState;isOf(Lnet/minecraft/block/Block;)Z": "Lnet/minecraft/class_2680;method_27852(Lnet/minecraft/class_2248;)Z",
-      "isTargetPos": "Lnet/minecraft/class_1463$class_1470;method_6296(Lnet/minecraft/class_4538;Lnet/minecraft/class_2338;)Z",
-      "net/minecraft/entity/passive/RabbitEntity$EatCarrotCropGoal": "net/minecraft/class_1463$class_1470"
-    },
-    "stephen/betterpaths/mixin/ExampleMixin": {
-      "loadWorld": "Lnet/minecraft/server/MinecraftServer;method_3735()V"
-    },
     "stephen/betterpaths/mixin/HoeItemMixin": {
       "Lnet/minecraft/item/Item;useOnBlock(Lnet/minecraft/item/ItemUsageContext;)Lnet/minecraft/util/ActionResult;": "Lnet/minecraft/class_1792;method_7884(Lnet/minecraft/class_1838;)Lnet/minecraft/class_1269;",
       "useOnBlock": "Lnet/minecraft/class_1794;method_7884(Lnet/minecraft/class_1838;)Lnet/minecraft/class_1269;"
     },
-    "stephen/betterpaths/mixin/PlantBlockMixin": {
-      "Lnet/minecraft/block/BlockState;isOf(Lnet/minecraft/block/Block;)Z": "Lnet/minecraft/class_2680;method_27852(Lnet/minecraft/class_2248;)Z",
-      "canPlantOnTop": "Lnet/minecraft/class_2261;method_9695(Lnet/minecraft/class_2680;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)Z"
-    },
-    "stephen/betterpaths/mixin/SecondaryPointsOfInterestSensorMixin": {
-      "sense": "Lnet/minecraft/class_4221;method_19617(Lnet/minecraft/class_3218;Lnet/minecraft/class_1646;)V"
-    },
     "stephen/betterpaths/mixin/ShovelItemMixin": {
       "Lnet/minecraft/item/Item;useOnBlock(Lnet/minecraft/item/ItemUsageContext;)Lnet/minecraft/util/ActionResult;": "Lnet/minecraft/class_1792;method_7884(Lnet/minecraft/class_1838;)Lnet/minecraft/class_1269;",
       "useOnBlock": "Lnet/minecraft/class_1821;method_7884(Lnet/minecraft/class_1838;)Lnet/minecraft/class_1269;"
-    },
-    "stephen/betterpaths/mixin/StemBlockMixin": {
-      "Lnet/minecraft/block/BlockState;isOf(Lnet/minecraft/block/Block;)Z": "Lnet/minecraft/class_2680;method_27852(Lnet/minecraft/class_2248;)Z",
-      "canPlantOnTop": "Lnet/minecraft/class_2513;method_9695(Lnet/minecraft/class_2680;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)Z",
-      "randomTick": "Lnet/minecraft/class_2513;method_9514(Lnet/minecraft/class_2680;Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;Lnet/minecraft/class_5819;)V"
     }
   },
   "data": {
     "named:intermediary": {
-      "stephen/betterpaths/mixin/AttachedStemBlockMixin": {
-        "Lnet/minecraft/block/BlockState;isOf(Lnet/minecraft/block/Block;)Z": "Lnet/minecraft/class_2680;method_27852(Lnet/minecraft/class_2248;)Z",
-        "canPlantOnTop": "Lnet/minecraft/class_2195;method_9695(Lnet/minecraft/class_2680;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)Z"
-      },
-      "stephen/betterpaths/mixin/CropBlockMixin": {
-        "Lnet/minecraft/block/BlockState;isOf(Lnet/minecraft/block/Block;)Z": "Lnet/minecraft/class_2680;method_27852(Lnet/minecraft/class_2248;)Z",
-        "canPlantOnTop": "Lnet/minecraft/class_2302;method_9695(Lnet/minecraft/class_2680;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)Z",
-        "getAvailableMoisture": "Lnet/minecraft/class_2302;method_9830(Lnet/minecraft/class_2248;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)F"
-      },
-      "stephen/betterpaths/mixin/CropBlockStateMixin": {
-        "Lnet/minecraft/block/AbstractBlock$AbstractBlockState;getModelOffset(Lnet/minecraft/world/BlockView;Lnet/minecraft/util/math/BlockPos;)Lnet/minecraft/util/math/Vec3d;": "Lnet/minecraft/class_4970$class_4971;method_26226(Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)Lnet/minecraft/class_243;",
-        "Lnet/minecraft/block/AbstractBlock$AbstractBlockState;hasModelOffset()Z": "Lnet/minecraft/class_4970$class_4971;method_49228()Z",
-        "getModelOffset": "Lnet/minecraft/class_4970$class_4971;method_26226(Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)Lnet/minecraft/class_243;",
-        "hasModelOffset": "Lnet/minecraft/class_4970$class_4971;method_49228()Z"
-      },
-      "stephen/betterpaths/mixin/DirtPathMixin": {
-        "Lnet/minecraft/block/Block;onSteppedOn(Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/BlockState;Lnet/minecraft/entity/Entity;)V": "Lnet/minecraft/class_2248;method_9591(Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_1297;)V",
-        "onSteppedOn": "Lnet/minecraft/class_2248;method_9591(Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_1297;)V"
-      },
-      "stephen/betterpaths/mixin/EatCarrotCropGoalMixin": {
-        "Lnet/minecraft/block/BlockState;isOf(Lnet/minecraft/block/Block;)Z": "Lnet/minecraft/class_2680;method_27852(Lnet/minecraft/class_2248;)Z",
-        "isTargetPos": "Lnet/minecraft/class_1463$class_1470;method_6296(Lnet/minecraft/class_4538;Lnet/minecraft/class_2338;)Z",
-        "net/minecraft/entity/passive/RabbitEntity$EatCarrotCropGoal": "net/minecraft/class_1463$class_1470"
-      },
-      "stephen/betterpaths/mixin/ExampleMixin": {
-        "loadWorld": "Lnet/minecraft/server/MinecraftServer;method_3735()V"
-      },
       "stephen/betterpaths/mixin/HoeItemMixin": {
         "Lnet/minecraft/item/Item;useOnBlock(Lnet/minecraft/item/ItemUsageContext;)Lnet/minecraft/util/ActionResult;": "Lnet/minecraft/class_1792;method_7884(Lnet/minecraft/class_1838;)Lnet/minecraft/class_1269;",
         "useOnBlock": "Lnet/minecraft/class_1794;method_7884(Lnet/minecraft/class_1838;)Lnet/minecraft/class_1269;"
       },
-      "stephen/betterpaths/mixin/PlantBlockMixin": {
-        "Lnet/minecraft/block/BlockState;isOf(Lnet/minecraft/block/Block;)Z": "Lnet/minecraft/class_2680;method_27852(Lnet/minecraft/class_2248;)Z",
-        "canPlantOnTop": "Lnet/minecraft/class_2261;method_9695(Lnet/minecraft/class_2680;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)Z"
-      },
-      "stephen/betterpaths/mixin/SecondaryPointsOfInterestSensorMixin": {
-        "sense": "Lnet/minecraft/class_4221;method_19617(Lnet/minecraft/class_3218;Lnet/minecraft/class_1646;)V"
-      },
       "stephen/betterpaths/mixin/ShovelItemMixin": {
         "Lnet/minecraft/item/Item;useOnBlock(Lnet/minecraft/item/ItemUsageContext;)Lnet/minecraft/util/ActionResult;": "Lnet/minecraft/class_1792;method_7884(Lnet/minecraft/class_1838;)Lnet/minecraft/class_1269;",
         "useOnBlock": "Lnet/minecraft/class_1821;method_7884(Lnet/minecraft/class_1838;)Lnet/minecraft/class_1269;"
-      },
-      "stephen/betterpaths/mixin/StemBlockMixin": {
-        "Lnet/minecraft/block/BlockState;isOf(Lnet/minecraft/block/Block;)Z": "Lnet/minecraft/class_2680;method_27852(Lnet/minecraft/class_2248;)Z",
-        "canPlantOnTop": "Lnet/minecraft/class_2513;method_9695(Lnet/minecraft/class_2680;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)Z",
-        "randomTick": "Lnet/minecraft/class_2513;method_9514(Lnet/minecraft/class_2680;Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;Lnet/minecraft/class_5819;)V"
       }
     }
   }

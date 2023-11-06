@@ -25,7 +25,6 @@ public class ModItemGroups {
                         entries.add(ModBlocks.DIRT_PATH_SLAB);
                         entries.add(ModBlocks.GRAVEL_SLAB);
                         entries.add(ModBlocks.SAND_SLAB);
-                        entries.add(ModBlocks.FARMLAND_SLAB);
                     }).build());
 
     public static void registerItemGroups() {

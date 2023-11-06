@@ -23,7 +23,6 @@ public class ModBlocks {
     public static final Block DIRT_PATH_SLAB = registerBlock("dirt_path_slab", new DirtPathSlab());
     public static final Block GRAVEL_SLAB = registerBlock("gravel_slab", new GravelSlab());
     public static final Block SAND_SLAB = registerBlock("sand_slab", new SandSlab());
-    public static final Block FARMLAND_SLAB = registerBlock("farmland_slab", new FarmlandSlab());
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

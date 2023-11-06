@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/BetterPaths.main.iml" filepath="$PROJECT_DIR$/.idea/modules/BetterPaths.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/BetterPaths.test.iml" filepath="$PROJECT_DIR$/.idea/modules/BetterPaths.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/stephen.betterpaths.BetterPaths.test.iml" filepath="$PROJECT_DIR$/.idea/modules/stephen.betterpaths.BetterPaths.test.iml" />
     </modules>
   </component>
 </project>
