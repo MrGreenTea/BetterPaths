@@ -1,16 +1,14 @@
 package stephen.betterpaths.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
-
-import stephen.betterpaths.BetterPaths;
-import stephen.betterpaths.block.ModBlocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+import stephen.betterpaths.BetterPaths;
+import stephen.betterpaths.block.ModBlocks;
 
 public class ModItemGroups {
     public static final ItemGroup BETTER_PATHS = Registry.register(Registries.ITEM_GROUP,

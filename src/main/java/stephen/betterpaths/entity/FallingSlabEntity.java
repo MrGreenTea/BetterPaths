@@ -41,8 +41,6 @@ import net.minecraft.world.RaycastContext;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 import org.slf4j.Logger;
-import stephen.betterpaths.block.FallingSlab;
-
 
 import java.util.function.Predicate;
 

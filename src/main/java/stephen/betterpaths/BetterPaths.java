@@ -1,55 +1,21 @@
 package stephen.betterpaths;
 
-import com.google.common.collect.ImmutableMap;
-import com.google.common.collect.Maps;
 import com.mojang.datafixers.util.Pair;
-import net.fabricmc.accesswidener.AccessWidener;
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.accesswidener.AccessWidener;
-import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
-import net.fabricmc.loader.api.entrypoint.PreLaunchEntrypoint;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.Block;
 import net.minecraft.block.enums.SlabType;
 import net.minecraft.item.HoeItem;
 import net.minecraft.item.ItemUsageContext;
 import net.minecraft.item.Items;
-import stephen.betterpaths.block.ModBlocks;
-import stephen.betterpaths.item.ModItemGroups;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import stephen.betterpaths.block.ModBlocks;
+import stephen.betterpaths.item.ModItemGroups;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
-
-import com.google.common.collect.ImmutableMap;
-import com.google.common.collect.Maps;
-import com.mojang.datafixers.util.Pair;
-import java.util.Map;
-import java.util.function.Consumer;
-import java.util.function.Predicate;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemConvertible;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemUsageContext;
-import net.minecraft.item.Items;
-import net.minecraft.item.MiningToolItem;
-import net.minecraft.item.ToolMaterial;
-import net.minecraft.registry.tag.BlockTags;
-import net.minecraft.sound.SoundCategory;
-import net.minecraft.sound.SoundEvents;
-import net.minecraft.util.ActionResult;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.Direction;
-import net.minecraft.world.World;
-import net.minecraft.world.event.GameEvent;
 
 import static net.minecraft.block.SlabBlock.TYPE;
 
@@ -88,7 +54,6 @@ public class BetterPaths implements ModInitializer {
         PATH_STATES.put(ModBlocks.PODZOL_SLAB.getDefaultState(), ModBlocks.DIRT_PATH_SLAB.getDefaultState());
         PATH_STATES.put(ModBlocks.PODZOL_SLAB.getDefaultState().with(TYPE, SlabType.TOP), ModBlocks.DIRT_PATH_SLAB.getDefaultState().with(TYPE, SlabType.TOP));
         PATH_STATES.put(ModBlocks.PODZOL_SLAB.getDefaultState().with(TYPE, SlabType.DOUBLE), ModBlocks.DIRT_PATH_SLAB.getDefaultState().with(TYPE, SlabType.DOUBLE));
-        LOGGER.info("Hello Fabric world!");
     }
 }
 

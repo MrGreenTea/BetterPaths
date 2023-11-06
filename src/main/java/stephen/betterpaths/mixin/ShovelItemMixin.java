@@ -1,11 +1,10 @@
 package stephen.betterpaths.mixin;
 
-import com.mojang.datafixers.util.Pair;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.ShovelItem;
 import net.minecraft.item.ItemUsageContext;
+import net.minecraft.item.ShovelItem;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.ActionResult;
@@ -17,10 +16,6 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
-import stephen.betterpaths.BetterPaths;
-
-import java.util.function.Consumer;
-import java.util.function.Predicate;
 
 import static stephen.betterpaths.BetterPaths.PATH_STATES;
 
